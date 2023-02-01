@@ -65,9 +65,9 @@ function KeyLogger($logFile="$env:temp/$env:UserName.log") {
 ...
 ```
 ## Créditos:
-[PrettyBoyCosmo/DucKey-Logger](https://github.com/PrettyBoyCosmo/DucKey-Logger) codigo que me baseei para adaptação para digispark 
+[PrettyBoyCosmo/DucKey-Logger](https://github.com/PrettyBoyCosmo/DucKey-Logger) - Código que me baseei para adaptação para digispark 
 
-[Gadotti/DigisparkScripts](https://github.com/Gadotti/DigisparkScripts) Caso tenha problemas com letras ou sinais em função do teclado, recomendo esse git com a formatção de todas as teclas no teclado **PTBR-ABNT2**
+[Gadotti/DigisparkScripts](https://github.com/Gadotti/DigisparkScripts) - Caso tenha problemas com letras ou sinais em função do teclado, recomendo esse git com a formatção de todas as teclas no teclado **PTBR-ABNT2**
 
 
 ## 
